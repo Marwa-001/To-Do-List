@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(170, 214, 231);
+}
+
+.heading {
+    text-align: center;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(7, 105, 252);
+}
+
+.main {
+    height: 100%;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 85vw;
+    margin: auto;
+}
+
+.container> :nth-child(2) {
+    color: rgb(7, 105, 252);
+    text-decoration: underline;
+}
+
+.container> :nth-child(4) {
+    color: rgb(7, 105, 252);
+    text-decoration: underline;
+}
+
+.container .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 20px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 40px;
+    background-color: rgb(28, 119, 255);
+}
+
+.top>input {
+    padding: 10px 45px 10px 15px;
+    border-radius: 40px;
+    border: none;
+    margin: 0;
+}
+
+.top .addButton {
+    padding: 9px 18px;
+    border-radius: 30px;
+    border: none;
+    color: rgb(28, 119, 255);
+}
+
+.bottom>div {
+    margin: 8px 0px;
+    background-color: rgb(28, 119, 255);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-weight: 400;
+}
+
+.completedTasks>div {
+    margin: 8px 0px;
+    background-color: rgb(28, 119, 255);
+    color: whitesmoke;
+    padding: 15px 20px;
+    border-radius: 40px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 380px){
+    .container .top {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .top .addButton {
+        margin: auto;
+    }
+}
